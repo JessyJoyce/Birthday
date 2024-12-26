@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Birthday</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1>Happy Birthday!</h1>
+        <h1>Click the Gift Box!</h1> 
+        <div class="gift-box" onclick="celebrate()"> 
+            🎁 Open Gift 
+        </div> 
+        <div class="message">Happy Birthday! 🎉🎂 
+            <h3>Happy Birthday Jessica Osaruonamwen Omoroghomwan</h3> 
+            <h6>I want to tell you that I LOVE YOU so much. Am so proud of the women we have become, this day is not like any other day i love you everyday baby girl 🥰</h6> 
+            <p>My CaCa bby. Iye will be so proud of you and both of us.. Let's enjoy our day to the fullest... p.s i will win our birthday dinner outing</p> 
+        </div> 
+        <div class="fireworks" id="fireworks-container"></div> 
+    </div>
+
+<!-- <script>
+    function Celebrate() {
+        // Display Message
+        document.querySelector('.message').style.display = 'block';
+
+        // Trigger fireworks animation 
+        triggerFireworks();
+
+        // Hide the gift box
+        document.querySelector('.gift-box').style.display = 'none';
+    }
+
+    function triggerFireworks() {
+        let fireworkscontainer = document.getElementById('fireworks-container');
+        fireworkscontainer.style.display = 'block';
+
+        // Create 10 fireworks
+        for (let i = 0; i < 11; i++) {
+            let firework = document.createElement('div');
+            firework.classList.add('firework');
+            firework.style.left = '${Math.random() * 100}%';
+            firework.style.top = '${Math.random() * 100}%';
+            fireworkscontainer.appendChild(firework);
+
+            // Remove firework after animation 
+            setTimeout(() => {
+                firework.remove();
+            }, 1500);
+        }
+    }
+</script> -->
+
+<script>
+    function celebrate() { 
+        // Display message 
+        document.querySelector('.message').style.display = 'block'; 
+        
+        // Trigger fireworks animation 
+        triggerFireworks(); 
+        
+        // Hide the gift box and text 
+        document.querySelector('.gift-box').style.display = 'none'; 
+        document.querySelector('.container h1').style.display = 'none'; 
+    } 
+    
+    function triggerFireworks() { 
+        let fireworksContainer = document.getElementById('fireworks-container'); 
+        fireworksContainer.style.display = 'block'; 
+        
+        // Create 10 fireworks 
+        for (let i = 0; i < 1000; i++) { 
+            let firework = document.createElement('div'); 
+            firework.classList.add('firework'); firework.style.left = `${Math.random() * 100}%`; 
+            firework.style.top = `${Math.random() * 100}%`; fireworksContainer.appendChild(firework); 
+            
+            // Remove firework after animation 
+            setTimeout(() => { firework.remove(); 
+
+            }, 
+            1500); 
+        } 
+    } 
+
+
+</script>
+</body>
+</html>
